@@ -1,0 +1,8 @@
+Notes on how this package can be tested.
+────────────────────────────────────────
+
+To run the unit tests provided by the package you can do
+
+   sh run-unit-test
+
+in this directory.

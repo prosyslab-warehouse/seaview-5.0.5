@@ -1,0 +1,31 @@
+#!/bin/bash
+set -e
+
+pkg="seaview"
+
+if [ "$AUTOPKGTEST_TMP" = "" ] ; then
+  AUTOPKGTEST_TMP=`mktemp -d /tmp/${pkg}-test.XXXXXX`
+  trap "rm -rf ${AUTOPKGTEST_TMP}" 0 INT QUIT ABRT PIPE TERM
+fi
+
+cp -a /usr/share/doc/${pkg}/examples/* $AUTOPKGTEST_TMP
+
+cd $AUTOPKGTEST_TMP
+
+gunzip -r *
+
+seaview -build_tree -distance K2P -o tree.ph example.nxs
+
+# This requires PDF support
+touch test_status.log
+timeout 10s seaview -plotonly -svg tree.ph 2> test_status.log || true
+
+# Check if any stderr is logged into the log file
+if [ `cat test_status.log | wc -l` != 0 ]
+then
+	echo 'Test2 failed, printing error log'
+	cat test_status.log
+	exit 1
+fi
+
+echo "PASS"

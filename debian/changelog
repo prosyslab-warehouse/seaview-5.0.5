@@ -1,0 +1,692 @@
+seaview (1:5.0.5-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.6.0 (routine-update)
+  * Avoid explicitly specifying -Wl,--as-needed linker flag.
+
+ -- Andreas Tille <tille@debian.org>  Thu, 03 Feb 2022 16:01:36 +0100
+
+seaview (1:5.0.4-1) unstable; urgency=medium
+
+  * Team Upload.
+  * New upstream version 5.0.4
+
+ -- Nilesh Patra <npatra974@gmail.com>  Sat, 19 Sep 2020 15:59:30 +0530
+
+seaview (1:5.0.2-4) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Nilesh Patra <npatra974@gmail.com>  Sat, 19 Sep 2020 15:52:00 +0530
+
+seaview (1:5.0.2-3) unstable; urgency=medium
+
+  * Team Upload.
+  * Fix gcc-10 FTBFS (Closes: #957783)
+  * compat version: 13
+
+ -- Nilesh Patra <npatra974@gmail.com>  Tue, 28 Jul 2020 19:47:08 +0530
+
+seaview (1:5.0.2-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Andreas Tille ]
+  * Fix autopkgtest
+    Closes: #961399
+
+  [ Nilesh Patra ]
+  * Use xvfb to run autopkgtests
+
+ -- Nilesh Patra <npatra974@gmail.com>  Sun, 24 May 2020 21:21:17 +0200
+
+seaview (1:5.0.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version
+  * Standards-Version: 4.5.0 (routine-update)
+  * debhelper-compat 12 (routine-update)
+  * Secure URI in copyright format (routine-update)
+  * Remove trailing whitespace in debian/changelog (routine-update)
+  * Remove trailing whitespace in debian/control (routine-update)
+  * Remove trailing whitespace in debian/copyright (routine-update)
+  * Add salsa-ci file (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+  * Trim trailing whitespace. (routine-update)
+  * Wrap long lines in changelog entries: 20060918-1. (routine-update)
+  * Use secure URI in Homepage field. (routine-update)
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright). (routine-update)
+  * Extended description in d/copyright
+
+ -- Steffen Moeller <moeller@debian.org>  Fri, 15 May 2020 13:20:44 +0200
+
+seaview (1:4.7-1) unstable; urgency=medium
+
+  * New upstream version
+  * Drop patch since upstream has fixed Makefile
+  * Re-add example which was lost by accident
+  * Add autopkgtest
+
+ -- Andreas Tille <tille@debian.org>  Wed, 09 May 2018 14:39:32 +0200
+
+seaview (1:4.6.5-1) unstable; urgency=medium
+
+  * New upstream version
+  * Point Vcs fields to salsa.debian.org
+  * Standards-Version: 4.1.4
+  * Add ldflags used in Makefile of last version to build successfully
+  * Comment installation of example that is missing in upstream source
+  * Remove duplicated reference with non-standard interface
+
+ -- Andreas Tille <tille@debian.org>  Sat, 28 Apr 2018 07:25:07 +0200
+
+seaview (1:4.6.4-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.1.3
+  * debhelper 11
+
+ -- Andreas Tille <tille@debian.org>  Sat, 17 Feb 2018 14:31:40 +0100
+
+seaview (1:4.6.1.2-2) unstable; urgency=medium
+
+  * Enable reading number of bootstraps from phyml runs
+    Closes: #853835
+
+ -- Andreas Tille <tille@debian.org>  Wed, 01 Feb 2017 12:54:56 +0100
+
+seaview (1:4.6.1.2-1) unstable; urgency=medium
+
+  * New upstream version
+  * debhelper 10
+  * d/watch: version=4
+  * Add Keyword to desktop file
+
+ -- Andreas Tille <tille@debian.org>  Fri, 18 Nov 2016 08:26:19 +0100
+
+seaview (1:4.6.1.1-1) unstable; urgency=medium
+
+  * New upstream version
+  * cme fix dpkg-control
+
+ -- Andreas Tille <tille@debian.org>  Sat, 10 Sep 2016 07:10:54 +0200
+
+seaview (1:4.6-2) unstable; urgency=medium
+
+  * Do not require user input at stdin when calling phyml
+
+ -- Andreas Tille <tille@debian.org>  Wed, 20 Apr 2016 13:21:29 +0200
+
+seaview (1:4.6-1) unstable; urgency=medium
+
+  * New upstream version
+  * Move packaging from SVN to Git
+  * Better hardening
+
+ -- Andreas Tille <tille@debian.org>  Sun, 20 Mar 2016 07:12:09 +0100
+
+seaview (1:4.5.4.8-2) unstable; urgency=medium
+
+  * Rebuild using -fPIC
+    Closes: #809713
+
+ -- Andreas Tille <tille@debian.org>  Sun, 03 Jan 2016 14:40:56 +0100
+
+seaview (1:4.5.4.8-1) unstable; urgency=medium
+
+  [ Charles Plessy ]
+  * Drop menu file as per decision of the Technical Committee.
+
+  [ Andreas Tille ]
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Mon, 09 Nov 2015 08:29:12 +0100
+
+seaview (1:4.5.4.7-1) unstable; urgency=medium
+
+  * New upstream version (remove patch applied upstream)
+
+ -- Andreas Tille <tille@debian.org>  Tue, 22 Sep 2015 21:10:52 +0200
+
+seaview (1:4.5.4.5-1) unstable; urgency=medium
+
+  * New upstream version (remove patch applied upstream)
+
+ -- Andreas Tille <tille@debian.org>  Tue, 28 Jul 2015 18:24:20 +0200
+
+seaview (1:4.5.4.4-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Tue, 07 Jul 2015 16:20:43 +0200
+
+seaview (1:4.5.3.1-2) unstable; urgency=medium
+
+  * Remove unneeded build-dependance on libjpeg8-dev (Closes: #765824).
+
+ -- Charles Plessy <plessy@debian.org>  Sun, 19 Oct 2014 08:15:00 +0900
+
+seaview (1:4.5.3.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+  * Architecture any
+
+ -- Andreas Tille <tille@debian.org>  Sat, 04 Oct 2014 10:27:09 +0200
+
+seaview (1:4.5.3-1) unstable; urgency=medium
+
+  * New upstream version that can go to main since third party code
+    from PHYLIP is now free
+  * cme fix dpkg-control
+  * debian/copyright: Third party code from PHYLIP is now BSD-2-Clause
+
+ -- Andreas Tille <tille@debian.org>  Mon, 22 Sep 2014 21:59:39 +0200
+
+seaview (1:4.5.2-1) unstable; urgency=medium
+
+  * New upstream version.
+  * New homepage.
+
+ -- Charles Plessy <plessy@debian.org>  Sun, 21 Sep 2014 19:48:42 +0900
+
+seaview (1:4.5.1-1) unstable; urgency=medium
+
+  * New upstream version
+
+  [ Andreas Tille ]
+  * debian/upstream -> debian/upstream/metadata
+  * cme fix dpkg-control
+
+  [ Charles Plessy ]
+  * debian/patches/add-ldl.patch: removed (applied upstream).
+  * Build-depend on libjpeg8-dev instead of libjpeg62-dev.
+  * debian/seaview.mime: removed (redundant with FreeDesktop entry).
+
+ -- Charles Plessy <plessy@debian.org>  Sat, 10 May 2014 17:29:33 +0900
+
+seaview (1:4.4.2-1) unstable; urgency=low
+
+  * New upstream version
+    Closes: #688632
+  * debian/control:
+     - cme fix dpkg-control
+     - anonscm in Vcs fields
+  * debian/patches/add-ldl.patch: Provide lacking -ldl for successfull linking
+
+ -- Andreas Tille <tille@debian.org>  Mon, 12 Aug 2013 13:03:12 +0200
+
+seaview (1:4.4.0-1) unstable; urgency=low
+
+  New upstream release using Clustal Omega instead of Clustal W.
+
+  [ Andreas Tille ]
+  * debian/rules: do not force hardening
+  * debian/upstream: Keep old information from tasks file as additional
+    citation
+
+  [ Charles Plessy ]
+  * debian/patches/use-dpkg-buildflags.patch: removed parts adopted upstream.
+  * debian/control: recommend Clustal Omega instead of Clustal W.
+
+ -- Charles Plessy <plessy@debian.org>  Thu, 20 Sep 2012 13:30:40 +0900
+
+seaview (1:4.3.3-3) unstable; urgency=low
+
+  * debian/control: drop cdbs Build-Dependency
+  * debian/rules: switch to short dh
+  * debian/patches/use-dpkg-buildflags.patch: Patch for upstream Makefile
+    to ensure hardening flags (Thanks to Simon Ruderich <simon@ruderich.org>
+    for the patch)
+    Closes: #662818
+  * mv debian/examples debian/example_files
+    because lintian claimed executable debhelper file (missinterpreting
+    dir as debhelper input file)
+
+ -- Andreas Tille <tille@debian.org>  Tue, 06 Mar 2012 20:38:53 +0100
+
+seaview (1:4.3.3-2) unstable; urgency=low
+
+  * Build on libpng-dev instead of libpng12-dev (Closes: #662499).
+  * Harden through Debhelper's compatibility level 9.
+
+ -- Charles Plessy <plessy@debian.org>  Tue, 06 Mar 2012 13:47:02 +0900
+
+seaview (1:4.3.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Include upstream example in Nexus format (debian/seaview.examples).
+  * Complies with Policy 3.9.3 (debian/control, no other changes needed).
+
+ -- Charles Plessy <plessy@debian.org>  Fri, 24 Feb 2012 13:36:57 +0900
+
+seaview (1:4.3.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Moved help file to /usr/share/seaview and left a symbolic link.
+
+ -- Charles Plessy <plessy@debian.org>  Sun, 08 Jan 2012 18:57:12 +0900
+
+seaview (1:4.3.1-1) unstable; urgency=low
+
+  * New upstream release incorporating debian/patches/format-security.patch.
+  * Build seaview on armel architecture (debian/control).
+  * Build-depend on libjpeg62-dev directly (debian/control), as libjpeg62-dev
+    no more Provides libjpeg-dev since 6b1-2.
+
+ -- Charles Plessy <plessy@debian.org>  Sat, 03 Dec 2011 11:17:44 +0900
+
+seaview (1:4.3.0-2) unstable; urgency=low
+
+  * debian/patches/format-security.patch: Handle format strings properly
+    Closes: #648121
+  * debian/control: Fix Vcs fields
+
+ -- Andreas Tille <tille@debian.org>  Wed, 09 Nov 2011 08:26:27 +0100
+
+seaview (1:4.3.0-1) unstable; urgency=low
+
+  * New upstream version with SVG output.
+  * Built on FLTK 1.3 (debian/control).
+  * Corrected location of the help file (debian/rules).
+
+ -- Charles Plessy <plessy@debian.org>  Mon, 25 Jul 2011 18:57:42 +0900
+
+seaview (1:4.2.12-1) unstable; urgency=low
+
+  * New upstream versions.
+  * Using Debhelper compatibility level 8 (debian/control, debian/compat).
+  * Clean extra files through dh_clean (debian/clean, debian/rules).
+  * Simplified build system using CDBS to pass options through CFLAGS, removing
+    need for patching Makefile (debian/rules, debian/patches, debian/control).
+  * Incremented Standards-Version to reflect conformance with Policy 3.9.2
+    (debian/control, no changes needed).
+
+ -- Charles Plessy <plessy@debian.org>  Fri, 10 Jun 2011 15:26:56 +0900
+
+seaview (1:4.2.10-1) unstable; urgency=low
+
+  * New upstream version
+  * debian/patches/10_makefile.patch:
+    - Linker flag -Wl,--as-needed to avoid useless linking and dependencies
+    - Activate suggested Options in Makefile
+
+ -- Andreas Tille <tille@debian.org>  Thu, 25 Nov 2010 18:30:25 +0100
+
+seaview (1:4.2.9-1) unstable; urgency=low
+
+  * New upstream version (Closes: #601244).
+
+ -- Charles Plessy <plessy@debian.org>  Wed, 27 Oct 2010 16:12:00 +0900
+
+seaview (1:4.2.6-1) unstable; urgency=low
+
+  * New upstream version.
+  * Incremented Standards-Version to reflect conformance with Policy 3.9.1
+    (debian/control, no changes needed).
+  * Refreshed debian/copyright according to latest DEP-5 discussions.
+  * Moved debian/upstream-metadata.yaml's PMID and DOI keys in the
+    Reference namespace.
+
+ -- Charles Plessy <plessy@debian.org>  Mon, 23 Aug 2010 14:30:30 +0900
+
+seaview (1:4.2.5-1) unstable; urgency=low
+
+  * New upstrem version
+  * debian/watch: Force passive mode for ftp, because this works more
+    reliably
+  * Using dpkg source format version ‘3.0 (quilt)’ (debian/source/format)
+  * debian/seaview.doc-base.reference: There is no docbase section
+    Bibliography (even if this would be interesting) and thus it was
+    moved to Science/Biology
+
+ -- Andreas Tille <tille@debian.org>  Fri, 25 Jun 2010 11:56:05 +0200
+
+seaview (1:4.2.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Incremented Standards-Version to reflect conformance with Policy 3.8.4
+      (no changes needed).
+    - Support only i386 and amd64 until non-free autobuilders get more robust.
+  * Updated bibliographic reference in ‘debian/upstream-metadata.yaml’.
+
+ -- Charles Plessy <plessy@debian.org>  Thu, 08 Apr 2010 13:07:41 +0900
+
+seaview (1:4.2.1-1) unstable; urgency=low
+
+  [ Charles Plessy ]
+  * New upstream release that can be compiled with GCC 4.4.2
+    Closes: #560438, Thanks to Luk Claes for the help.
+  * Updated bibliographic reference and Debian copyright file.
+
+  [ Andreas Tille ]
+  * s/Debian-Med/Debian Med/ in debian/control.
+
+ -- Charles Plessy <plessy@debian.org>  Wed, 06 Jan 2010 21:59:51 +0900
+
+seaview (1:4.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Build depend on unversionned libjpeg-dev package.
+    - Added XS-Autobuild: yes to benefit from the non-free autobuilders.
+    - checked package conformance with Policy 3.8.3 (no changes needed).
+  * Documented zlib.conf in debian/copyright.
+  * Added various informations in debian/upstream-metadata.yaml.
+
+ -- Charles Plessy <plessy@debian.org>  Sun, 18 Oct 2009 17:10:08 +0900
+
+seaview (1:4.1-1) unstable; urgency=low
+
+  * New upstream version adding nucleotide ambiguity symbols in consensus
+    DNA sequences.
+  * debian/control: checked package conformance with Policy 3.8.2
+    and incremented Standards-Version accordingly (no changes needed).
+  * debian/seaview.1*: accepted upstream and therefore deleted.
+
+ -- Charles Plessy <plessy@debian.org>  Mon, 13 Jul 2009 18:54:00 +0900
+
+seaview (1:4.0-1) unstable; urgency=low
+
+  * New upstream version
+    - Computes and draws parsimony, distance and PhyML phylogenetic trees.
+    - This new version unfortunately uses non-free files, and has therefore been
+      removed from Debian, but is distributed in the ‘non-free’ section of its
+      archive as a service its users.
+  * debian/control:
+    - Changed section to non-free/science.
+    - Build-Depends on libxft-dev and libxext-dev.
+    - Recommends phyml, muscle and clustalw.
+    - Dropped dependency on xterm.
+    - checked package conformance with Policy 3.8.1.
+    - Updated description and removed reference from it.
+    - Dropped build dependency on quilt.
+  * debian/patches and debian/README.source removed:
+    - 20-no-PDF-in-help.patch: upstream wording became true for Debian as well.
+    - 21-location-of-seaview.help.patch: passing -DHELPFILENAME through
+      debian/rules instead.
+    - 40-seaview_align.sh-newline.patch, seaview_align-full_path.patch:
+      seaview_align.sh was removed upstream.
+  * debian/README.Debian deleted as well (obsolete).
+  * debian/rules:
+    - Makes `seaview' instead of `seaviewps' as (non-free) PDF support is not
+      default anymore.
+    - Indicate the location of the help file with:
+      -DHELPFILENAME=\\\"/usr/share/doc/seaview/seaview.html\\\"
+    - Uses `dh clean' and $(RM) macro in the clean target.
+    - Uses `dh binary-arch` in the binary-arch target (created debian/docs,
+      debian/seaview.examples, and debian/manpages).
+    - Removed protein.mase from examples (removed upstream).
+    - Removed patching facilities (no patches to apply anymore).
+  * Removed `seaview_align.sh' from debian/install, as it was removed upstream.
+  * debian/copyright:
+    - Incremented year and version.
+    - Link to the precise versions of the GNU GPL and LGPL.
+    - Added the necessary disclaimers because SeaView became non-free.
+  * Updated the manpage (debian/seaview.1*).
+  * Registered the new help file with doc-base (debian/seaview.doc-base.help).
+
+ -- Charles Plessy <plessy@debian.org>  Wed, 27 May 2009 08:07:40 +0900
+
+seaview (1:3.2-1) unstable; urgency=low
+
+  * New upstream version:
+    - Version 3.2: Database import can be done using a keyword.
+    - Version 3.1: now use Fl_Native_File_Chooser.
+    - Version 3.0: sequences can be imported from embl, genbank, swissprot if
+      internet access.
+  * debian/copyright:
+    - Added the FL directory from Upstream sources.
+    - Updated to the latest version of the machine-readable format.
+  * debian/seaview.svg: vector icon made for SeaView and forwarded upstream.
+  * debian/seaview.1*: added year 2008 to copyright statements.
+  * Updated my email address.
+  * debian/control, debian/compat: using Debhelper 7.
+  * debian/control: added build-dependency on libpng12-dev and zlib1g-dev.
+  * Experimental handling of bibliographic references:
+    - debian/references contains a BibTeX-formatted reference.
+    - debian/seaview.doc-base.references registers it for Doc-base
+      in a "Bibliography" section to be proposed later.
+
+ -- Charles Plessy <plessy@debian.org>  Sun, 14 Dec 2008 22:58:57 +0900
+
+seaview (1:2.4-1) unstable; urgency=low
+
+  * New upstream version:
+    - Version 2.3: corrected bug if adding/deleting/moving sequences when in
+      'view as proteins' mode.
+    - Version 2.4: PHYLIP format: user can customize the max length of names.
+  * debian/control:
+    - Suggests: muscle, clustalw (non-free). Seaview detects if they
+     are not present and grays the corresponding option.
+    - Allows the upload by Debian Maintainers.
+    - Checked that the package conforms to Policy 3.7.3.
+  * debian/copyright: made machine-readable
+  * MIME support:
+    - debian/seaview.sharedmimeinfo associates .aln suffix and
+      text/x-clustalw-alignment, debian/seaview.mime and
+      debian/seaview.desktop associate seaview with this MIME type.
+    - debian/rules executes dh_installmime.
+  * debian/seaview.1.xml: increased version number to 2.4 (no other changes
+    needed)
+  * debian/seaview.1: rebuilt with DocBook XSL Stylesheets v1.73.2.
+
+ -- Charles Plessy <charles-debian-nospam@plessy.org>  Sat, 12 Jan 2008 15:30:07 +0900
+
+seaview (1:2.2-1) unstable; urgency=low
+
+  [ Nelson A. de Oliveira ]
+  * Updated watch file.
+
+  [ Charles Plessy ]
+  * New upstream release:
+    - introduced interface to external alignment programs.
+    - Work with several alignment windows; copy and paste sequence data
+      between them.
+  * Moved the Homepage: field out from the package's description.
+  * Removed the XS- prefix of the Vcs fields in debian/control
+  * Building the manpage offline: added seaview.1 to the package, and
+    removed xsltproc, docbook-xml and docbook-xsl from the build-dependencies.
+  * Patches to Seaview:
+    - Refreshed.
+    - Suppressed xterm_to_x-terminal-emulator.patch : strange communication
+      problems happen between seaview and some terminal emulators, such as
+      gnome-terminal or konsole.
+    - Hardcoded the path to seaview_align.sh.
+
+ -- Charles Plessy <charles-debian-nospam@plessy.org>  Sun, 18 Nov 2007 23:35:29 +0900
+
+seaview (1:2.0-1) unstable; urgency=low
+
+  * New upstream release. Use "Props:View as proteins" to align
+    protein-coding DNA sequences.
+
+ -- Charles Plessy <charles-debian-nospam@plessy.org>  Fri, 24 Aug 2007 00:02:33 +0900
+
+seaview (20070615-1) unstable; urgency=low
+
+  * New upstream release correcting problems with lowercase characters.
+  * Converted the SVN repository which hosts the Debian source package
+    to use the MergeWithUpstream option.
+  * Moved examples to debian/examples.
+  * Using 'quilt' as a patch management system instead of 'dpatch'.
+  * Managing all the changes to the sources with quilt.
+  * Adding $(misc-Depends) in debian/control.
+  * Debian Menu transition: moving entry to Applications/Science/Biology.
+  * Manpage: automatic date update; upgrading revision number.
+  * Adding bibliographic reference to debian/copyright and debian/control.
+  * Dropping 'config.h' patch from .diff.gz.
+
+ -- Charles Plessy <charles-debian-nospam@plessy.org>  Sat, 21 Jul 2007 12:43:23 +0900
+
+seaview (20070417-1) unstable; urgency=low
+
+  * New upstream release adding processing of comments in FASTA format.
+
+ -- Charles Plessy <charles-debian-nospam@plessy.org>  Sun, 29 Apr 2007 22:51:23 +0900
+
+seaview (20070215-1) unstable; urgency=low
+
+  * New upstream release, adding a new "Edit sequence" option in the Edit menu.
+  * Updated manpage and converted it to Unicode.
+  * Add Subversion repository URL to debian/control.
+  * Including /usr/share/dpatch/dpatch.make in debian/rules.
+
+ -- Charles Plessy <charles-debian-nospam@plessy.org>  Thu,  5 Apr 2007 09:38:08 +0900
+
+seaview (20061005-1) unstable; urgency=low
+
+  * New upstream release. The xpm icon and its sources are now included in.
+  * New maintainer email: the previous one was not the intended mailing list.
+  * Removing options passed to x-terminal-emulator if they are not a MUST in
+    the policy chapter 11.8.3.
+  * Improved manpage.
+
+ -- Charles Plessy <charles-debian-nospam@plessy.org>  Sat, 28 Oct 2006 17:27:02 +0900
+
+seaview (20060918-1) unstable; urgency=low
+
+  * New upstream release (Closes: #357585)
+  * Uses muscle instead of clustalw, therefore moving to main (Closes: #357587)
+  * Update debian/copyright: the current licence of seaview is GPL
+    (Closes: #357581)
+  * Conforms to Standards version 3.7.2 and debhelper compatibility level 5.
+  * Collective maintenance: Debian-Med Packaging Team is the new Maintainer.
+  * Outputs PS instead of PDF as Debian can not support the PDFlib.
+  * Uses x-terminal-emulator instead of xterm.
+  * Support for freedesktop menus, and nice new icon.
+  * Updated manpage.
+
+ -- Charles Plessy <charles-debian-nospam@plessy.org>  Thu, 28 Sep 2006 12:13:53 +0900
+
+seaview (20021127-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Medium-urgency upload for RC bugfix.
+  * Rebuild for the C++ ABI transition.  Closes: #328175.
+
+ -- Steve Langasek <vorlon@debian.org>  Thu, 22 Sep 2005 02:07:07 -0700
+
+seaview (20021127-4) unstable; urgency=low
+
+  * Cleaned up debian/rules file.
+  * Conforms to Standards version 3.6.1.
+
+ -- Brian R Furry <bfurry@nac.net>  Sun, 30 Nov 2003 00:04:02 +0000
+
+seaview (20021127-3) unstable; urgency=low
+
+  * Adopted by new maintainer; closes: 100261
+  * Conforms to Standards version 3.6.0.
+
+ -- Brian R Furry <bfurry@nac.net>  Thu, 11 Sep 2003 21:12:40 -0400
+
+seaview (20021127-2.2) unstable; urgency=low
+
+  * NMU.
+  * Downgrade dependency on clustalw to a recommendation, since we don't
+    absolutely need it and it doesn't exist on mips(el).
+
+ -- Aaron M. Ucko <ucko@debian.org>  Tue, 17 Jun 2003 13:22:55 -0400
+
+seaview (20021127-2.1) unstable; urgency=low
+
+  * NMU.
+  * Rebuild with Xft2-based FLTK (>= 1.1.3-2.1).
+
+ -- Aaron M. Ucko <ucko@debian.org>  Wed,  7 May 2003 20:36:02 -0400
+
+seaview (20021127-2) unstable; urgency=low
+
+  * QA upload.
+  * Built with g++ 3.2 and libfltk1.1c102 (closes: #176147).
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 11 Jan 2003 02:50:11 +0000
+
+seaview (20021127-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream release.
+  * Conforms to Standards version 3.5.8.
+
+ -- Matej Vela <vela@debian.org>  Sun,  1 Dec 2002 22:14:33 +0100
+
+seaview (20021010-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream release.
+  * Provide a config.h for old_file_chooser.cxx.
+  * debian/menu: Use `section=Apps/Science hints=Biology' (see #162812).
+
+ -- Matej Vela <vela@debian.org>  Sat, 19 Oct 2002 21:26:13 +0200
+
+seaview (20020409-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream version (there's no version number in the sources).
+    Closes: #128357.
+  * align.cxx:
+    - Handle temporary files securely (seaview 0.0 is not vulnerable).
+    - Use x-terminal-emulator rather than xterm or rxvt.
+  * seaview.1:
+    - List NEXUS among the supported formats.
+    - `-reducefonts' is no longer accepted.
+  * Switched to debhelper 4.
+  * Moved /usr/lib/seaview/seaview.help to /usr/share/seaview as
+    architecture-independent.
+  * Changed section from contrib/misc to contrib/science.
+  * Added menu support.
+  * debian/changelog: Remove obsolete Emacs local variables.
+  * Conforms to Standards version 3.5.7.
+
+ -- Matej Vela <vela@debian.org>  Fri, 20 Sep 2002 18:25:47 +0200
+
+seaview (0.0-6.1) unstable; urgency=low
+
+  * NMU
+  * Update to build against XForms 0.89.  (closes: Bug#118138)
+
+ -- Doug Porter <dsp@debian.org>  Mon, 12 Nov 2001 11:43:51 -0500
+
+seaview (0.0-6) unstable; urgency=low
+
+  * Maintainer set to Debian QA Group <packages@qa.debian.org>.
+
+ -- Adrian Bunk <bunk@fs.tum.de>  Fri, 24 Aug 2001 23:58:22 +0200
+
+seaview (0.0-5) unstable; urgency=low
+
+  * Adopted by new maintainer; closes: #92802
+  * Moved all doc files to /usr/share/doc; closes: #91647
+  * Moved manpage to /usr/share/man; closes: #91064
+  * Updated to latest policy, and added Build-Depends.
+  * Removed some unnecessary files in debian dir.
+
+ -- Dr. Guenter Bechly <gbechly@debian.org>  Sat,  7 Apr 2001 18:00:30 +0200
+
+seaview (0.0-4) unstable; urgency=low
+
+  * A few examples added
+  * New bug in seaview_align.sh, this time fixed seriously.
+
+ -- Stephane Bortzmeyer <bortzmeyer@debian.org>  Thu,  3 Jun 1999 10:07:55 +0200
+
+seaview (0.0-3) unstable; urgency=low
+
+  * Big bug in seaview_align.sh (not all parameters were passed).
+
+ -- Stephane Bortzmeyer <bortzmeyer@debian.org>  Wed, 26 May 1999 14:39:26 +0200
+
+seaview (0.0-2) unstable; urgency=low
+
+  * No longer depends on c-shell or xterm. Closes #34700
+  * Manual page. Closes #34615
+
+ -- Stephane Bortzmeyer <bortzmeyer@debian.org>  Tue, 25 May 1999 14:42:15 +0200
+
+seaview (0.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Stephane Bortzmeyer <bortzmeyer@debian.org>  Mon,  1 Mar 1999 16:41:51 +0100

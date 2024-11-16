@@ -1,0 +1,9 @@
+Document: seaview-help
+Title: SeaView help
+Author: Manolo Gouy <mgouy@biomserv.univ-lyon1.fr>
+Abstract: This is the hypertext help available when running SeaView.
+Section: Science/Biology
+
+Format: HTML
+Index: /usr/share/doc/seaview/seaview.html
+Files: /usr/share/doc/seaview/seaview.html

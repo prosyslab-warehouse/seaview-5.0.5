@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015 Manolo Gouy <manolo.gouy_at_univ-lyon1.fr> -->
+<component type="desktop">
+ <id>seaview.desktop</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>GPL-3.0</project_license>
+ <name>SeaView</name>
+ <summary>GUI for multiple sequence alignment and molecular phylogeny</summary>
+ <description>
+<p>SeaView is a multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny.</p>
+<ul>
+	<li>SeaView reads and writes various file formats (NEXUS, MSF, CLUSTAL, FASTA, PHYLIP,
+	MASE, Newick) of DNA and protein sequences and of phylogenetic trees.</li>
+	<li>SeaView drives programs muscle or Clustal-Omega for multiple sequence alignment, 
+	and also allows to use any external alignment algorithm able to read and write FASTA-formatted files.</li>
+	<li>Seaview drives the Gblocks program to select blocks of evolutionarily conserved sites.</li>
+	<li>SeaView computes phylogenetic trees by:</li>
+	<li>- parsimony, using PHYLIP's dnapars/protpars algorithm,</li>
+	<li>- distance, with NJ or BioNJ algorithms on a variety of evolutionary distances,</li>
+	<li>- maximum likelihood, driving program PhyML 3.1.</li>
+	<li>SeaView prints and draws phylogenetic trees on screen, SVG, PDF or PostScript files.</li>
+	<li>SeaView allows to download sequences from EMBL/GenBank/UniProt using the Internet.</li>
+</ul>
+ </description>
+ <screenshots>
+  <screenshot type="default">
+   <image>http://doua.prabi.fr/binaries/seaview4.png</image>
+   <caption>The main alignment window used in the color-by-codon mode</caption>
+  </screenshot>
+  <screenshot>
+   <image>http://doua.prabi.fr/binaries/seaview-tree.png</image>
+   <caption>The tree window with some zoom-in applied</caption>
+  </screenshot>
+  <screenshot>
+   <image>  http://doua.prabi.fr/software/seaview_data/PhyML-dialog.png</image>
+   <caption>Dialog window to perform Maximum-Likelihood tree-building</caption>
+  </screenshot>
+ </screenshots>
+ <url type="homepage">http://doua.prabi.fr/software/seaview</url>
+ <updatecontact>manolo.gouy_at_univ-lyon1.fr</updatecontact>
+ 
+ <developer_name>Manolo Gouy</developer_name>
+
+  <keywords>
+  <keyword>molecular phylogeny</keyword>
+  <keyword>phylogenetic tree</keyword>
+  <keyword>sequence alignment</keyword>
+  <keyword>parsimony</keyword>
+  <keyword>neighbor-joining/keyword>
+  <keyword>maximum likelihood</keyword>
+  </keywords>
+
+</component>

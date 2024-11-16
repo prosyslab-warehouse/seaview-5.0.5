@@ -1,0 +1,41 @@
+Documentation: http://doua.prabi.fr/software/seaview_data/seaview
+Reference:
+ - Author: Gouy, Manolo and Guindon, Stephane and Gascuel, Olivier
+   Title: >
+     SeaView version 4: a multiplatform graphical user interface for
+     sequence alignment and phylogenetic tree building
+   Journal: Mol Biol Evol
+   Volume: 27
+   Number: 2
+   Pages: 221-224
+   Year: 2010
+   PMID: 19854763
+   DOI: 10.1093/molbev/msp259
+   URL: http://mbe.oxfordjournals.org/cgi/content/abstract/27/2/221
+   eprint: http://mbe.oxfordjournals.org/cgi/reprint/27/2/221.pdf
+ - Author: N. Galtier and M. Gouy and C. Gautier
+   Title: >
+    SeaView and Phylo_win, two graphic tools for sequence alignment and
+    molecular phylogeny
+   Journal: Comput. Applic. Biosci
+   Volume: 12
+   Number: 6
+   Pages: 543-548
+   Year: 1996
+   PMID: 9021275
+   DOI: 10.1093/bioinformatics/12.6.543
+   URL: http://bioinformatics.oxfordjournals.org/content/12/6/543.abstract
+   ePrint: >
+    http://bioinformatics.oxfordjournals.org/content/12/6/543.full.pdf+html
+Screenshots:
+ - http://doua.prabi.fr/binaries/seaview4
+ - http://doua.prabi.fr/binaries/seaview-tree
+Registry:
+ - Name: SciCrunch
+   Entry: SCR_015059
+ - Name: bio.tools
+   Entry: seaview
+ - Name: OMICtools
+   Entry: OMICS_08908
+ - Name: conda:bioconda
+   Entry: NA

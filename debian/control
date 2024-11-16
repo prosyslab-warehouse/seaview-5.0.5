@@ -1,0 +1,44 @@
+Source: seaview
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Uploaders: Charles Plessy <plessy@debian.org>,
+           Andreas Tille <tille@debian.org>
+Section: science
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libfltk1.3-dev,
+               libpng-dev,
+               libxft-dev,
+               libxext-dev,
+               libxinerama-dev,
+               zlib1g-dev
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/med-team/seaview
+Vcs-Git: https://salsa.debian.org/med-team/seaview.git
+Homepage: https://doua.prabi.fr/software/seaview
+Rules-Requires-Root: no
+
+Package: seaview
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Recommends: clustalo,
+            muscle,
+            phyml
+Description: Multiplatform interface for sequence alignment and phylogeny
+ SeaView is a viewer and editor of multiple sequence alignments, i.e.
+ DNA or protein sequences are positioned each in their own separate line,
+ such that the nucleotide/amino acid at a particular position (column) is
+ presumed to have the same biochemical property.
+ .
+ SeaView reads and writes various file formats (NEXUS, MSF, CLUSTAL, FASTA,
+ PHYLIP, MASE, Newick) of DNA and protein sequences and of phylogenetic trees.
+ Alignments can be manually edited. It drives the programs Muscle or Clustal
+ Omega for multiple sequence alignment, and also allows one to use any external
+ alignment algorithm able to read and write FASTA-formatted files. It computes
+ phylogenetic trees by parsimony using PHYLIP's dnapars/protpars algorithm, by
+ distance with NJ or BioNJ algorithms on a variety of evolutionary distances, or
+ by maximum likelihood using the program PhyML 3.0.
+ .
+ SeaView draws phylogenetic
+ trees on screen or PostScript files, and allows one to download sequences from
+ EMBL/GenBank/UniProt using the Internet.

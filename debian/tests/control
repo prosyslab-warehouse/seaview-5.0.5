@@ -1,0 +1,3 @@
+Test-Command: xvfb-run -s "-screen 0 1024x768x24 -ac +extension GLX +render -noreset" sh debian/tests/run-unit-test
+Depends: @, xvfb, xauth
+Restrictions: allow-stderr

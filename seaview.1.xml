@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"
+        href="http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"/usr/share/xml/docbook/schema/dtd/4.5/docbookx.dtd" [
+
+  <!ENTITY dhfirstname "Charles">
+  <!ENTITY dhsurname   "Plessy">
+  <!ENTITY dhsection   "1">
+  <!ENTITY dhemail     "plessy@debian.org">
+  <!ENTITY dhusername  "&dhfirstname; &dhsurname;">
+  <!ENTITY dhucpackage "SEAVIEW">
+  <!ENTITY dhpackage   "seaview">
+  <!ENTITY dhrelease   "4.0">
+  <!ENTITY dhtitle     "Seaview Manual">
+  <!ENTITY debian      "<productname>Debian</productname>">
+  <!ENTITY gnu         "<acronym>GNU</acronym>">
+  <!ENTITY gpl         "&gnu; <acronym>GPL</acronym>">
+]>
+
+<refentry>
+  <refentryinfo>
+     <title>&dhtitle;</title>
+        <productname>&dhpackage;</productname>
+        <releaseinfo role="version">&dhrelease;</releaseinfo>
+        <authorgroup>
+           <author>
+              <firstname>Manolo</firstname>
+              <surname>Gouy</surname>
+              <contrib>Upstream author of SeaView.</contrib>
+              <address>
+                <email>mgouy@biomserv.univ-lyon1.fr</email>
+              </address>
+            </author>
+            <author>
+              <firstname>Stéphane</firstname>
+              <surname>Bortzmeyer</surname>
+              <contrib>Wrote this manpage in DocBook XML for the Debian distribution.</contrib>
+            <address>
+              <email>bortzmeyer@debian.org</email>
+            </address>
+          </author>
+            <author>
+              <firstname>&dhfirstname;</firstname>
+              <surname>&dhsurname;</surname>
+              <contrib>Updated this manpage in DocBook XML for the Debian distribution.</contrib>
+            <address>
+              <email>&dhemail;</email>
+            </address>
+          </author>
+       </authorgroup>
+     <copyright>
+       <year>1996</year>
+       <year>1997</year>
+       <year>1998</year>
+       <year>1999</year>
+       <year>2000</year>
+       <year>2001</year>
+       <year>2002</year>
+       <year>2003</year>
+       <year>2004</year>
+       <year>2005</year>
+       <year>2006</year>
+       <year>2007</year>
+       <year>2008</year>
+       <year>2009</year>
+       <holder>Manolo Gouy</holder>
+     </copyright>
+     <copyright>
+       <year>1999</year>
+       <holder>Stéphane Bortzmeyer</holder>
+     </copyright>
+     <copyright>
+       <year>2006</year>
+       <year>2007</year>
+       <year>2008</year>
+       <year>2009</year>
+       <holder>Charles Plessy</holder>
+     </copyright>
+     <legalnotice>
+       <para><application>SeaView</application> is released under the GNU General Public Licence, with a special permission to use some source files from the PHYLIP package. Because these files are used, you are not allowed generate revenue with SeaView.</para>
+       
+       <para>You can redistribute and/or modify this manpage under same terms as SeaView itself.<!-- This also applies to this xml document. --></para>
+       
+       <para> On Debian systems, the complete text of the GNU General Public License version 2 can be found in <filename>/usr/share/common-licenses/GPL-2</filename>.</para>
+     </legalnotice>
+  </refentryinfo>
+  
+  <refmeta>
+    <refentrytitle>&dhucpackage;</refentrytitle>
+    <manvolnum>&dhsection;</manvolnum>
+  </refmeta>
+  
+  <refnamediv>
+    <refname>&dhpackage;</refname>
+    <refpurpose>a multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny.</refpurpose>
+  </refnamediv>
+  
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>&dhpackage;</command> <arg choice="opt"><replaceable>filename</replaceable></arg>
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  
+  <refsect1>
+    <title>DESCRIPTION</title>
+
+    <para><command>&dhpackage;</command> is the program that starts the
+    SeaView GUI.</para>
+    
+    <para>SeaView is a graphical interface for multiple sequence alignment and molecular phylogeny. It is able to read various alignment formats (MSF, CLUSTAL, FASTA, PHYLIP, MASE, NEXUS) and the Newick tree format, and allows one to manually edit the alignment, to run  DOT-PLOT, CLUSTAL or MUSCLE programs to locally improve the alignment, and also to compute, draw and edit phylogenetic trees.</para>
+
+    <para>If started from the command line with <filename>filename</filename> as an argument, &dhpackage; will open the alignment stored in <filename>filename</filename> and display/draw it on screen. Filename can be in any of the mase, clustal, phylip, msf, fasta, or nexus 
+    alignment formats or in the Newick tree format.</para>
+  </refsect1>
+
+  <refsect1>
+    <title>OPTIONS</title>
+    <variablelist>
+      <varlistentry>
+        <term><option>-fast</option></term>
+        <listitem><para>Suppresses double buffering for display. This should only accelerate display on very slow systems.</para></listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>-fontsize</option> <parameter>n</parameter></term>
+        <listitem><para>Sets the font size to <parameter>n</parameter>.</para></listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+  
+  <refsect1>
+    <title>FILES</title>
+    <para><filename><varname>$HOME</varname>/.seaviewrc</filename> holds the user's configuration for SeaView.</para>
+  </refsect1>
+  
+  <refsect1>
+    <title>SEE ALSO</title>
+    <para> The program is fully documented online. Press the "help" button in the main window. On Debian systems, the text template for SeaView's help can be found in <filename>/usr/share/doc/seaview/seaview.html</filename>.</para>
+    
+    <para>
+      Two multiple alignment programs can be called from whithin SeaView: <citerefentry><refentrytitle>muscle</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>clustalw</refentrytitle><manvolnum>1</manvolnum></citerefentry>.
+    </para>
+    
+    <para>The home page of SeaView is http://pbil.univ-lyon1.fr/software/seaview.html.</para>
+    
+    <para>SeaView uses some components of the PHYLIP package, see ‘http://evolution.genetics.washington.edu/phylip.html’.</para>
+  </refsect1>
+
+  <refsect1>
+    <title>REFERENCE</title>
+    <para>If you use SeaView in a published work, please cite the following reference: Galtier, N., Gouy, M. and Gautier, C. (1996) SeaView and Phylo_win, two graphic tools for sequence alignment and molecular phylogeny. Comput. Applic. Biosci., 12, 543-548. </para>
+  </refsect1>
+</refentry>

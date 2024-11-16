@@ -1,0 +1,5 @@
+seaview			usr/bin
+seaview.xpm		usr/share/pixmaps
+seaview.html		usr/share/seaview
+debian/seaview.desktop	usr/share/applications
+debian/seaview.svg	usr/share/icons/hicolor/scalable/apps

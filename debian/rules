@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+# Same as upstream Makefile
+CFLAGS  += -DUSE_XFT -I/usr/include/freetype2 -DFLTK1 -Dunix -Icsrc -I. -DNO_PDF
+
+# Debian-specific names and paths
+CFLAGS  += -DDEFAULT_HELPFILE=\"/usr/share/seaview/seaview.html\" -DPHYMLNAME=\"phyml\"
+
+export DEB_CFLAGS_MAINT_APPEND  = $(CFLAGS) -fPIC
+
+# Link as needed
+
+# Hardening options
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@

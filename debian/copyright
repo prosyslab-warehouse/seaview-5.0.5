@@ -1,0 +1,114 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: SeaView
+Upstream-Contact: Manolo Gouy <manolo.gouy@univ-lyon1.fr>
+Source: ftp://pbil.univ-lyon1.fr/pub/mol_phylogeny/seaview/archive/
+
+Files: *
+Copyright: 1996-2014 Manolo Gouy <mgouy@biomserv.univ-lyon1.fr>
+License: GPL-3+ with PHYLIP exception
+ This program, except where indicated, is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation;
+ either version 3 of the License, or (at your option) any later version..
+ .
+ Two files (dnapars.c and protpars.c) have a distinct license
+ which authorizes distribution that does not generate revenue.
+ .
+ Three files (bionj.c, phyml_util.c and phyml_util.h) are also covered by the
+ GNU General Public License but are copyright Stephane Guindon.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ Additional permission under GNU GPL version 3 section 7
+ .
+ If you modify this Program, or any covered work, by linking or combining it with PHYLIP
+ (or a modified version of that library), containing parts covered by the terms of
+ the University of Washington license, the licensor of this Program grants you additional
+ permission to convey the resulting work.
+ .
+ A copy of the GNU General Public License is available
+ from http://www.gnu.org/licenses/gpl.txt .
+Comment:
+ On Debian systems, the complete text of the GNU General Public License version
+ 3 can be found in ‘/usr/share/common-licenses/GPL-3’.
+
+Files: csrc/bionj.c csrc/phyml_util.h
+Copyright: © Stephane Guindon. Oct 2003 onward
+License: GPL-2+ with PHYLIP exception
+ This program is free software; you can redistribute it and/or modify it under the terms of the
+ GNU General Public License as published by the Free Software Foundation; either version 2 of
+ the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+ even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along with this program; if not,
+ see <http://www.gnu.org/licenses>.
+ .
+ Linking PHYML statically or dynamically with other modules is making a combined work based on PHYML.
+ Thus, the terms and conditions of the GNU General Public License cover the whole combination.
+ .
+ In addition, as a special exception, the copyright holders of PHYML give you permission to combine
+ PHYML with free software programs or libraries that are released under the GNU LGPL and with code
+ included in the standard release of PHYLIP under the University of Washington license (or modified
+ versions of such code, with unchanged license). You may copy and distribute such a system following
+ the terms of the GNU GPL for PHYML and the licenses of the other code concerned.
+ .
+ Note that people who make modified versions of PHYML are not obligated to grant this special exception
+ for their modified versions; it is their choice whether to do so. The GNU General Public License gives
+ permission to release a modified version without this exception; this exception also makes it possible
+ to release a modified version which carries forward this exception.
+
+Files: csrc/dnapars.c csrc/protpars.c
+Copyright: © 1993–2014 University of Washington
+License: BSD-2-Clause
+ derived from PHYLIP version 3.696 with the following copyright:
+ .
+   version 3.696.
+   Written by Joseph Felsenstein, Akiko Fuseki, Sean Lamont, and Andrew Keeffe.
+ .
+   Copyright (c) 1993-2014, Joseph Felsenstein
+   All rights reserved.
+ .
+   Redistribution and use in source and binary forms, with or without
+   modification, are permitted provided that the following conditions are met:
+ .
+   1. Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+ .
+   2. Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+ .
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+   POSSIBILITY OF SUCH DAMAGE.
+
+Files: debian/*
+Copyright: © 1999 Stephane Bortzmeyer <bortzmeyer@debian.org>
+           © 2001 Dr. Guenter Bechly <gbechly@debian.org>
+           © 2001 Adrian Bunk <bunk@fs.tum.de>
+           © 2001 Doug Porter <dsp@debian.org>
+           © 2002 Matej Vela <vela@debian.org>
+           © 2003 Colin Watson <cjwatson@debian.org>
+           © 2003 Aaron M. Ucko <ucko@debian.org>
+           © 2003 Brian R Furry <bfurry@nac.net>
+           © 2005 Steve Langasek <vorlon@debian.org>
+           © 2007 Nelson A. de Oliveira <naoliv@debian.org>
+           © 2010 Andreas Tille <tille@debian.org>
+License: PD
+ The contributions of all involved persons is small enough to be put in
+ public domain.  The former "unknown" is not accepted by lintian any more
+ and would lead to an auto-rejection otherwise.
